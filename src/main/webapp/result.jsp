@@ -2,11 +2,11 @@
 <%@ include file="navbar.jsp" %>
 <html>
 <head>
-    <title>Результат</title>
+    <title>Result</title>
 </head>
 <body>
-<h1>Ви завершили квест!</h1>
-<a href="welcome.jsp">Повернутися до вибору квестів</a>
+<h1>You've finished your quest!</h1>
+<a href="welcome.jsp">Back to Quest Selection</a>
 </body>
 </html>
 

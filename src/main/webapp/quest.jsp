@@ -3,10 +3,10 @@
 <%@ include file="navbar.jsp" %>
 <html>
 <head>
-    <title>Квест</title>
+    <title>Quest</title>
 </head>
 <body>
-<h1>Квест</h1>
+<h1>Quest</h1>
 <c:if test="${not empty message}">
     <p style="color: red;">${message}</p>
 </c:if>
@@ -20,7 +20,7 @@
         </label><br />
     </c:forEach>
     <input type="hidden" name="questId" value="${currentQuest.questId}" />
-    <button type="submit">Відповісти</button>
+    <button type="submit">Answer</button>
 </form>
 </body>
 </html>
