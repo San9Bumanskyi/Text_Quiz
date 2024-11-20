@@ -9,6 +9,8 @@
 <%@ page import="java.util.Map" %>
 <%@ page import="java.util.List" %>
 <%@ page import="model.Quest" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ include file="navbar.jsp" %>
 
 <%
   Map<String, List<Quest>> allQuests = QuestLoader.loadAllQuests();
@@ -19,6 +21,10 @@
   <title>Welcome</title>
 </head>
 <body>
+<c:if test="${not empty message}">
+  <p style="color: red;">${message}</p>
+</c:if>
+
 <h1>Welcome in the game!</h1>
 <h2>Choose the quest:</h2>
 <ul>
