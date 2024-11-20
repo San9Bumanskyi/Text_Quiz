@@ -5,6 +5,16 @@
   <a href="welcome.jsp" style="float: left; color: white; text-decoration: none; padding: 14px 20px;">Quests</a>
   <a href="profile.jsp" style="float: left; color: white; text-decoration: none; padding: 14px 20px;">Profile</a>
   <c:if test="${not empty user}">
-    <a href="logout.jsp" style="float: right; color: white; text-decoration: none; padding: 14px 20px;">Logout</a>
+    <a href="login.jsp" onclick="return confirmLogout();" style="float: right; color: white; text-decoration: none; padding: 14px 20px;">Logout</a>
   </c:if>
 </div>
+
+<script>
+  function confirmLogout() {
+    if (confirm("Are you sure you want to log out?")) {
+      window.location.href = "logout";
+      return true;
+    }
+    return false;
+  }
+</script>
