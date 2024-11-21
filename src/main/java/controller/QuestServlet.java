@@ -16,7 +16,7 @@ import java.util.Map;
 @WebServlet("/quest")
 public class QuestServlet extends HttpServlet {
 
-    private Map<String, List<Quest>> allQuests;
+    public Map<String, List<Quest>> allQuests;
 
     @Override
     public void init() throws ServletException {
