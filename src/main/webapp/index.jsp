@@ -9,6 +9,7 @@
 <body>
 <h1>About This Game</h1>
 <p>This is an adventure game where you choose quests and experience exciting challenges!</p>
+<p>Explore the dungeon, or feel the adventurer's taste!</p>
 <c:if test="${not empty user}">
     <p>Welcome, ${user.username}! Enjoy your journey.</p>
 </c:if>

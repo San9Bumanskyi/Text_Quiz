@@ -13,6 +13,69 @@
       "options": ["Attack", "Run"],
       "correctAnswer": 0,
       "successMessage": "You defeated the skeleton and found a treasure!"
+    },
+    {
+      "id": "adventure_3",
+      "question": "The treasure chest is locked, and you need a key. You spot a key hanging on the wall guarded by a giant spider. What will you do?",
+      "options": ["Fight the spider", "Sneak around the spider"],
+      "correctAnswer": 1,
+      "successMessage": "You managed to sneak past the spider and retrieve the key!"
+    },
+    {
+      "id": "adventure_4",
+      "question": "With the key in hand, you approach the chest. The lock clicks open, revealing a dark and ominous passageway. Will you enter?",
+      "options": ["Enter the passageway", "Leave the chest and go back"],
+      "correctAnswer": 0,
+      "successMessage": "You entered the passageway, and the door slammed shut behind you."
+    },
+    {
+      "id": "adventure_5",
+      "question": "The passageway leads to a large underground cavern with glowing mushrooms. At the far end, you see a shadowy figure. Do you approach it?",
+      "options": ["Approach the figure", "Stay hidden in the shadows"],
+      "correctAnswer": 0,
+      "successMessage": "You approached the figure, and it turned out to be a friendly guide who offers you advice for the journey ahead."
+    },
+    {
+      "id": "adventure_6",
+      "question": "The guide tells you of a powerful artifact hidden deep within the cave. However, the path is fraught with danger. Will you continue on your quest?",
+      "options": ["Continue the quest", "Turn back and leave the cave"],
+      "correctAnswer": 0,
+      "successMessage": "You pressed forward, determined to find the artifact."
+    },
+    {
+      "id": "adventure_7",
+      "question": "The path divides in front of you. One way is lit by a strange green glow, and the other is completely dark. Which way will you go?",
+      "options": ["Follow the green glow", "Take the dark path"],
+      "correctAnswer": 0,
+      "successMessage": "The green glow led you to a chamber filled with glowing crystals. In the center, you find the artifact!"
+    },
+    {
+      "id": "adventure_8",
+      "question": "With the artifact in your possession, you now face an ancient guardian who blocks your exit. Do you fight it or try to negotiate?",
+      "options": ["Fight the guardian", "Negotiate with the guardian"],
+      "correctAnswer": 1,
+      "successMessage": "The guardian listens to your plea and allows you to pass, recognizing your noble quest."
+    },
+    {
+      "id": "adventure_9",
+      "question": "You reach the surface, but the world outside is in chaos. An evil sorcerer has taken control of the land. Do you confront the sorcerer or gather allies first?",
+      "options": ["Confront the sorcerer", "Gather allies first"],
+      "correctAnswer": 1,
+      "successMessage": "You gather a group of brave warriors who aid you in confronting the sorcerer."
+    },
+    {
+      "id": "adventure_10",
+      "question": "In the final battle, the sorcerer unleashes a powerful spell. How will you react?",
+      "options": ["Counter the spell", "Dodge the spell and attack"],
+      "correctAnswer": 0,
+      "successMessage": "Your counterspell defeats the sorcerer and breaks the curse on the land."
+    },
+    {
+      "id": "adventure_11",
+      "question": "With the sorcerer defeated, peace returns to the world. However, a mysterious figure approaches you. Who are they?",
+      "options": ["A fellow adventurer", "A time traveler from the future"],
+      "correctAnswer": 1,
+      "successMessage": "The time traveler tells you that the world you saved is part of a much larger timeline, and your journey has just begun!"
     }
   ],
   "dungeon": [
@@ -29,6 +92,69 @@
       "options": ["Talk", "Attack"],
       "correctAnswer": 0,
       "successMessage": "The mage taught you a powerful spell!"
+    },
+    {
+      "id": "dungeon_3",
+      "question": "The mage tells you of a dangerous trap ahead. Will you trust his warning or ignore it?",
+      "options": ["Trust the mage", "Ignore the warning"],
+      "correctAnswer": 0,
+      "successMessage": "You trust the mage and avoid the trap, finding a hidden path instead!"
+    },
+    {
+      "id": "dungeon_4",
+      "question": "The path leads you to a large room filled with treasure chests, but they are surrounded by a group of goblins. Will you fight them or try to sneak past?",
+      "options": ["Fight the goblins", "Sneak past the goblins"],
+      "correctAnswer": 1,
+      "successMessage": "You manage to sneak past the goblins without being noticed and open one of the chests!"
+    },
+    {
+      "id": "dungeon_5",
+      "question": "Inside the chest, you find a mysterious key. As you turn to leave, you hear footsteps behind you. Do you confront the follower or hide?",
+      "options": ["Confront the follower", "Hide"],
+      "correctAnswer": 0,
+      "successMessage": "You confront the follower and discover it's another adventurer who offers to join you on your quest!"
+    },
+    {
+      "id": "dungeon_6",
+      "question": "With the new ally at your side, you continue through the dungeon. The path splits into three directions: one leading downward, another toward a door with strange runes, and the third toward an eerie, glowing light. Which way will you go?",
+      "options": ["Downward", "Runes door", "Glowing light"],
+      "correctAnswer": 1,
+      "successMessage": "You choose the runes door, which opens to reveal a hidden library filled with ancient tomes."
+    },
+    {
+      "id": "dungeon_7",
+      "question": "The library holds many secrets, but one book catches your attention. As you open it, a dark shadow springs to life! Do you fight or attempt to close the book?",
+      "options": ["Fight the shadow", "Close the book and run"],
+      "correctAnswer": 1,
+      "successMessage": "You manage to close the book just in time and narrowly escape the shadow's grasp."
+    },
+    {
+      "id": "dungeon_8",
+      "question": "The door you came through has now sealed itself. The only way forward is through a narrow, winding passage. As you walk, you find a series of traps. Will you disarm them or risk the danger?",
+      "options": ["Disarm the traps", "Risk the traps"],
+      "correctAnswer": 0,
+      "successMessage": "You skillfully disarm the traps and continue deeper into the dungeon."
+    },
+    {
+      "id": "dungeon_9",
+      "question": "The passage opens up to a vast chamber. In the center lies a pedestal with a glowing orb. As you approach, a voice booms, 'Only the worthy may touch the orb.' Do you reach for it or leave it alone?",
+      "options": ["Touch the orb", "Leave the orb"],
+      "correctAnswer": 0,
+      "successMessage": "The orb grants you immense power, but it also curses you with a time limit to escape the dungeon!"
+    },
+    {
+      "id": "dungeon_10",
+      "question": "With the curse in place, the dungeon begins to shift, and the walls start closing in. You need to find the exit quickly. Do you trust the mysterious map you find or try to find your own way out?",
+      "options": ["Follow the map", "Find your own way out"],
+      "correctAnswer": 1,
+      "successMessage": "You decide to trust your instincts and manage to find a hidden exit in time!"
+    },
+    {
+      "id": "dungeon_11",
+      "question": "As you exit, the dungeon seems to collapse behind you. A figure appears, saying, 'You have completed the trial, but this is just the beginning.' Do you ask who they are or simply leave?",
+      "options": ["Ask who they are", "Leave without asking"],
+      "correctAnswer": 0,
+      "successMessage": "The figure reveals themselves to be the Dungeon Master, and invites you to take on even greater challenges ahead!"
     }
   ]
 }
