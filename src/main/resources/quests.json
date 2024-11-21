@@ -1,0 +1,34 @@
+{
+  "adventure": [
+    {
+      "id": "adventure_1",
+      "question": "You stand before two doors. To the left, a whisper; to the right, silence. Where will you go?",
+      "options": ["To the left", "To the right"],
+      "correctAnswer": 0,
+      "successMessage": "You chose the correct door!"
+    },
+    {
+      "id": "adventure_2",
+      "question": "A skeleton stands before you. Do you attack or run?",
+      "options": ["Attack", "Run"],
+      "correctAnswer": 0,
+      "successMessage": "You defeated the skeleton and found a treasure!"
+    }
+  ],
+  "dungeon": [
+    {
+      "id": "dungeon_1",
+      "question": "You find yourself in a dark dungeon. Will you move forward?",
+      "options": ["Forward", "Backward"],
+      "correctAnswer": 0,
+      "successMessage": "You proceed further into the dungeon."
+    },
+    {
+      "id": "dungeon_2",
+      "question": "An old mage appears before you. Will you talk or attack?",
+      "options": ["Talk", "Attack"],
+      "correctAnswer": 0,
+      "successMessage": "The mage taught you a powerful spell!"
+    }
+  ]
+}

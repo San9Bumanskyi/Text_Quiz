@@ -105,7 +105,8 @@ public class QuestServlet extends HttpServlet {
 
         int selectedOptionIndex = Integer.parseInt(selectedOption);
 
-        if (selectedOptionIndex == currentQuest.getCorrectOptionIndex()) {
+        // Заміна getCorrectOptionIndex() на getCorrectAnswer()
+        if (selectedOptionIndex == currentQuest.getCorrectAnswer()) {
             // Якщо відповідь правильна, переходимо до наступного питання
             session.setAttribute("currentQuestIndex", currentQuestIndex + 1);
             String currentQuestId = (String) session.getAttribute("currentQuestId");
@@ -119,5 +120,6 @@ public class QuestServlet extends HttpServlet {
             req.getRequestDispatcher("/welcome.jsp").forward(req, resp);
         }
     }
+
 
 }
