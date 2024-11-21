@@ -20,7 +20,6 @@ public class QuestServlet extends HttpServlet {
 
     @Override
     public void init() throws ServletException {
-        // Завантаження всіх квестів під час ініціалізації сервлета
         allQuests = QuestLoader.loadAllQuests();
     }
 
@@ -57,7 +56,6 @@ public class QuestServlet extends HttpServlet {
 
         int currentQuestIndex = (int) session.getAttribute("currentQuestIndex");
         if (currentQuestIndex >= selectedQuest.size()) {
-            // Квест завершено — очищаємо сесійні змінні
             session.removeAttribute("currentQuestIndex");
             session.removeAttribute("selectedQuest");
             session.removeAttribute("currentQuestId");
@@ -86,7 +84,6 @@ public class QuestServlet extends HttpServlet {
 
         int currentQuestIndex = (int) session.getAttribute("currentQuestIndex");
         if (currentQuestIndex >= selectedQuest.size()) {
-            // Якщо всі питання пройдено, перенаправляємо на сторінку вибору
             session.removeAttribute("currentQuestIndex");
             session.removeAttribute("selectedQuest");
             session.removeAttribute("currentQuestId");
@@ -105,14 +102,11 @@ public class QuestServlet extends HttpServlet {
 
         int selectedOptionIndex = Integer.parseInt(selectedOption);
 
-        // Заміна getCorrectOptionIndex() на getCorrectAnswer()
         if (selectedOptionIndex == currentQuest.getCorrectAnswer()) {
-            // Якщо відповідь правильна, переходимо до наступного питання
             session.setAttribute("currentQuestIndex", currentQuestIndex + 1);
             String currentQuestId = (String) session.getAttribute("currentQuestId");
             resp.sendRedirect("quest?questId=" + currentQuestId);
         } else {
-            // Якщо відповідь неправильна, завершуємо квест
             session.removeAttribute("currentQuestIndex");
             session.removeAttribute("selectedQuest");
             session.removeAttribute("currentQuestId");
