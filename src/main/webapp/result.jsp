@@ -3,6 +3,7 @@
 <html>
 <head>
     <title>Result</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 <h1>You've finished your quest!</h1>

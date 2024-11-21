@@ -16,7 +16,6 @@ public class RegisterServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
-        String role = req.getParameter("role");
 
         if (UserDatabase.getUser(username) != null) {
             req.setAttribute("message", "Username already exists.");
@@ -24,7 +23,7 @@ public class RegisterServlet extends HttpServlet {
             return;
         }
 
-        User newUser = new User(username, password, role);
+        User newUser = new User(username, password);
         UserDatabase.addUser(newUser);
         resp.sendRedirect("login.jsp");
     }

@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Register</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 <h2>Register</h2>
@@ -10,11 +11,6 @@
   <input type="text" id="username" name="username" required><br><br>
   <label for="password">Password:</label>
   <input type="password" id="password" name="password" required><br><br>
-  <label for="role">Role:</label>
-  <select id="role" name="role">
-    <option value="user">User</option>
-    <option value="admin">Admin</option>
-  </select><br><br>
   <button type="submit">Register</button>
 </form>
 <p>${message}</p>

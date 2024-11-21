@@ -1,14 +1,17 @@
 package model;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class User {
     private String username;
-    private String password; // Можна додавати хешування пароля для безпеки
-    private String role; // "admin", "user", "guest"
+    private String password;
 
-    public User(String username, String password, String role) {
+    @JsonCreator
+    public User(@JsonProperty("username") String username,
+                @JsonProperty("password") String password) {
         this.username = username;
         this.password = password;
-        this.role = role;
     }
 
     public String getUsername() {
@@ -25,13 +28,5 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
     }
 }

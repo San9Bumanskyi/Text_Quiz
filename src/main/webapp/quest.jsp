@@ -4,23 +4,25 @@
 <html>
 <head>
     <title>Quest</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-<h1>Quest</h1>
-<c:if test="${not empty message}">
-    <p style="color: red;">${message}</p>
-</c:if>
-<form action="quest" method="post">
-
-    <h2>${currentQuest.question}</h2>
-    <c:forEach var="option" items="${currentQuest.options}" varStatus="status">
-        <label>
-            <input type="radio" name="option" value="${status.index}" required />
-                ${option}
-        </label><br />
-    </c:forEach>
-    <input type="hidden" name="questId" value="${currentQuest.questId}" />
-    <button type="submit">Answer</button>
-</form>
+<div class="container">
+    <h1>Quest</h1>
+    <c:if test="${not empty message}">
+        <p style="color: red;">${message}</p>
+    </c:if>
+    <form action="quest" method="post">
+        <h2>${currentQuest.question}</h2>
+        <div class="options-container">
+            <c:forEach var="option" items="${currentQuest.options}" varStatus="status">
+                <button type="submit" name="option" value="${status.index}" class="option-button">
+                        ${option}
+                </button>
+            </c:forEach>
+        </div>
+        <input type="hidden" name="questId" value="${currentQuest.questId}" />
+    </form>
+</div>
 </body>
 </html>
